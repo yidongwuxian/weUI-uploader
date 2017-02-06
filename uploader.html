@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>WeUI-Uploader</title>
+  <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/0.3.0/weui.css" />
+  <link rel="stylesheet" href="css/uploader-font.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body>
+<div class="container">
+    <!--gallery start-->
+    <div class="weui-gallery" id="gallery">
+        <span class="weui-gallery__img" id="galleryImg"></span>
+        <div class="weui-gallery__opr">
+            <a href="javascript:" class="weui-gallery__del">
+                <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+            </a>
+        </div>
+    </div>
+    <!--gallery end-->
+    <!--upload start-->
+    <div class="weui_cells_title">上传</div>
+    <div class="weui_cells weui_cells_form">
+        <div class="weui_cell">
+            <div class="weui_cell_bd weui_cell_primary">
+              <div class="weui_uploader">
+                <div class="weui_uploader_hd weui_cell">
+                  <div class="weui_cell_bd weui_cell_primary">图片上传</div>
+                  <div class="weui_cell_ft js_counter">0/6</div>
+                </div>
+                <div class="weui_uploader_bd">
+                  <ul class="weui_uploader_files"></ul>
+                  <div class="weui_uploader_input_wrp">
+                    <input class="weui_uploader_input js_file" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!--upload end-->
+</div>
+<!--dialog start-->
+<div class="weui_dialog_alert">
+    <div class="weui_mask"></div>
+    <div class="weui_dialog">
+      <div class="weui_dialog_hd"> <strong class="weui_dialog_title">警告</strong>
+      </div>
+      <div class="weui_dialog_bd">弹窗内容，告知当前页面信息等</div>
+      <div class="weui_dialog_ft">
+        <a href="javascript:;" class="weui_btn_dialog primary">确定</a>
+      </div>
+    </div>
+</div>
+<!--dialog end-->
+<script src="js/zepto.min.js"></script>
+<script src="js/weui-uploader.js"></script>
+</body>
+</html>
